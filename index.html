@@ -1,11 +1,38 @@
-<html>
-  <head>
-    <title>Redirecting You</title>
-    <link rel="icon" type="gif" href="/WebsiteTesting-ScriptTest/yaaaa.gif">
-      <meta http-equiv="Refresh" content="5;url=https://ceniscool.github.io/AzurmanWebsite/ContactUs.html">
-  </head>
-  <body>
-    <p>You are being redirected to, if page doesn't load please click this link:</p>
-    <a href="https://ceniscool.github.io/AzurmanWebsite/ContactUs.html">Redirect Link</a>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Weather Channel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="weather-channel">
+    <header class="header">
+      <div class="logo">
+        <img src="weather-logo.png" alt="Weather Channel Logo">
+      </div>
+      <h1>The Weather Channel</h1>
+      <h2>Your Retro Forecast</h2>
+    </header>
+    <div class="forecast">
+      <div id="current-weather" class="weather-display"></div>
+    </div>
+    <footer class="footer">
+      <p>© 1987 Weather Channel</p>
+    </footer>
+  </div>
+
+  <!-- Invisible YouTube Player for Audio -->
+  <div class="audio-player">
+    <iframe 
+      src="https://www.youtube.com/embed/v97Nu7mvYw4?autoplay=1&loop=1&playlist=v97Nu7mvYw4&controls=0&modestbranding=1" 
+      frameborder="0" 
+      allow="autoplay" 
+      style="width: 0; height: 0; border: none;">
+    </iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
