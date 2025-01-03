@@ -1,0 +1,88 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', monospace;
+  background: radial-gradient(circle, #001F3F 0%, #001C3D 100%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Weather Channel Container */
+.weather-channel {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  background: rgba(0, 0, 32, 0.9);
+  border: 3px solid #00FFFF;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00FFFF, 0 0 30px #0033FF;
+}
+
+/* Header Section */
+.header {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #00FFFF;
+  margin: 0;
+  text-shadow: 0 0 10px #00FFFF, 0 0 20px #0099FF;
+}
+
+.header h2 {
+  font-size: 1.2rem;
+  color: #FFD700;
+  margin: 0.5rem 0;
+  text-shadow: 0 0 10px #FFD700, 0 0 15px #FFCC33;
+}
+
+/* Forecast Section */
+.forecast {
+  background: #001F3F;
+  border: 2px solid #FFFFFF;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #FFFFFF;
+}
+
+.weather-display {
+  font-size: 1.5rem;
+  color: #00FF00;
+  font-family: monospace;
+  text-shadow: 0 0 8px #00FF00, 0 0 15px #33FF33;
+  animation: flicker 1.5s infinite alternate;
+}
+
+/* Footer Section */
+.footer {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  color: #FFFFFF;
+  text-shadow: 0 0 8px #FFFFFF, 0 0 12px #CCCCFF;
+}
+
+/* Flicker Effect */
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
